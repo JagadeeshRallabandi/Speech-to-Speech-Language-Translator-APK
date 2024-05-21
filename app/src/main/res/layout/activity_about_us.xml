@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AboutUsActivity">
+
+    <!-- Title TextView for "About Us" in the top left -->
+    <TextView
+        android:id="@+id/tv_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="About Us"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Home Button/TextView in the top right -->
+    <TextView
+        android:id="@+id/HomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="8dp"
+        android:text="@string/Home_button"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- ScrollView for the content, full width below the "About Us" -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_about_us"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Vertical LinearLayout for scrollable content with centered images -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <!-- New TextView for introduction text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to our speech translator app developed as part of an EPICS group project for the fourth semester of the academic year 2023-24. Under the guidance of our mentor, Mr. Karthik Seshadri, our team has diligently worked to create a user-friendly and efficient platform for language translation. Led by Ayesha, bearing roll number 422253 and Team Members Jagadeesh and Lakshya bearing roll numbers 422245 and 422228 in the app, our team has strived to incorporate innovative features and ensure seamless functionality. We are dedicated to providing a high-quality and reliable speech translation service that caters to the diverse needs of our users. Thank you for being a part of our journey as we continue to evolve and enhance our app to better serve you.."
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black" />
+            <!-- Dynamic content like ImageViews and TextViews -->
+            <!-- Example block for image and description -->
+
+            <ImageView
+                android:layout_width="176dp"
+                android:layout_height="156dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ayesha" />
+
+            <TextView
+                android:layout_width="377dp"
+                android:layout_height="80dp"
+                android:text="Ayesha Nashith\nRoll no.422253\n Email:422253@student.nitandhra.ac.in"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="183dp"
+                android:layout_height="167dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/jagadeesh" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="97dp"
+                android:text="Jagadeesh Rallabandi\n Roll no.422245\n Email:422245@student.nitandhra.ac.in"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="190dp"
+                android:layout_height="184dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/lakshya" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="104dp"
+                android:text="Lakshya Vardhan\n Roll No 422228\nEmail:422228@student.nitandhra.ac.in"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+
+            <!-- Add more blocks for additional images and descriptions as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

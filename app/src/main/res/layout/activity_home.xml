@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"> <!-- Set background color to black -->
+
+    <!-- Image at Top Left Corner -->
+
+    <!-- Login TextView Button -->
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="67dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/app_icon" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/background_3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_marginEnd="16dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/tv_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:layout_marginEnd="16dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_toStartOf="@id/tv_login"
+        android:layout_alignTop="@id/tv_login" />
+
+    <!-- Signup Button -->
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="400dp"
+        android:layout_height="71dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:background="#FFFFFF"
+        android:backgroundTint="#87CEEB"
+         android:textColorHint="@color/black"
+        android:text="SignUp" /> <!-- Set background color to lavender -->
+
+    <!-- SpeechTranslator Text -->
+    <TextView
+        android:id="@+id/tv_speech_translator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SpeechTranslator"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_motivational_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_speech_translator"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="22dp"
+        android:text="---let your words travel the world"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

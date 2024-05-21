@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".TnCActivity">
+
+    <!-- Terms and Conditions Heading -->
+    <TextView
+        android:id="@+id/textViewHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terms and Conditions"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+         android:layout_marginTop="16dp"/>
+
+    <!-- Content TextView -->
+    <TextView
+        android:id="@+id/textViewContent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="By using this speech translator app, you agree to abide by all applicable laws and regulations regarding your use of the service.\nUsers are solely responsible for the content they translate and share through the app, and the app assumes no liability for the accuracy or consequences of such translations.\nThe app may collect and store personal information for the purpose of improving translation accuracy and enhancing user experience, subject to our Privacy Policy.\nUsers may not use the app for any illegal, harmful, or inappropriate purposes, including but not limited to hate speech, harassment, or violation of intellectual property rights.\nThe app reserves the right to modify or terminate services at any time, and users are encouraged to regularly review these terms for updates.\n Mail your feedback to rjagadeesh2004@gmail.com"
+        android:textColor="@android:color/black"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewHeading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

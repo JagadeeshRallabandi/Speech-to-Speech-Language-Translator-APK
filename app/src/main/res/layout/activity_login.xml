@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#87CEEB"
+    tools:context=".LoginActivity">
+
+  <androidx.cardview.widget.CardView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_margin="30dp"
+      app:cardCornerRadius="30dp"
+      app:cardElevation="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Login"
+          android:textAlignment="center"
+          android:textColor="#87CEEB"
+          android:textSize="36sp"
+          android:textStyle="bold" />
+
+      <EditText
+          android:id="@+id/login_username"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginTop="40dp"
+          android:drawableLeft="@drawable/ic_baseline_person_pin_24"
+          android:drawablePadding="8dp"
+          android:padding="8dp"
+          android:textColor="@color/white"
+          android:hint="Username or Email" />
+
+      <EditText
+          android:id="@+id/login_password"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginTop="20dp"
+          android:drawableLeft="@drawable/ic_baseline_lock_24"
+          android:drawableRight="@drawable/ic_baseline_disabled_visible_24"
+          android:drawablePadding="8dp"
+          android:hint="Password"
+          android:inputType="textPassword"
+          android:longClickable="false"
+          android:padding="8dp"
+          android:textColor="@color/white" />
+
+      <TextView
+          android:id="@+id/textViewForgotPassword"
+          android:layout_width="287dp"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/login_button"
+          android:layout_centerHorizontal="true"
+          android:layout_marginTop="16dp"
+          android:clickable="true"
+          android:focusable="true"
+          android:text="Forgot Password?"
+          android:textColor="#87CEEB"
+          android:textSize="16sp" />
+
+      <ImageView
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:src="@drawable/recaptcha" />
+
+      <!-- Add Checkbox for reCAPTCHA Verification -->
+      <CheckBox
+          android:id="@+id/CheckBox_Id"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:text="I'm not a robot"
+          android:textColor="@color/white" />
+
+      <Button
+          android:id="@+id/login_button"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginTop="30dp"
+          android:backgroundTint="#87CEEB"
+          android:text="Login"
+          android:textSize="18sp"
+          app:cornerRadius="20dp" />
+
+      <TextView
+          android:id="@+id/signupRedirectText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:layout_marginTop="10dp"
+          android:padding="8dp"
+          android:text="@string/not_yet_registered_sign_up"
+          android:textColor="#87CEEB"
+          android:textSize="18sp" />
+
+    </LinearLayout>
+
+  </androidx.cardview.widget.CardView>
+
+</LinearLayout>

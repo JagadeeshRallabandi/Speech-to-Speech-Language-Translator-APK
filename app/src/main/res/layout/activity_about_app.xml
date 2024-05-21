@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AboutAppActivity">
+
+    <!-- Main Heading -->
+    <TextView
+        android:id="@+id/tvMainHeading"
+        android:layout_width="126dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="About App"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Scroll View for Description -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMainHeading"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Welcome to our speech translator app, where breaking language barriers is our mission. Our motto, 'Connecting the World Through Speech,' encapsulates our commitment to facilitating seamless communication across languages. With a robust feature set, including a signup page and email verification for security, our app ensures a safe and reliable user experience. The login page is fortified by Google's reCAPTCHA, enhancing protection against unauthorized access. On the main screen, users can effortlessly translate text and hear the output voice in their chosen languages via a spinner interface. Additionally, a translation history feature allows users to review past translations and conveniently generate PDFs for reference. In the settings section, users have control over their accounts with options to reset passwords, delete personal details, and manage translation history. We strive to empower users with comprehensive tools while upholding their privacy and security. Join us in bridging linguistic divides with ease and confidence."
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

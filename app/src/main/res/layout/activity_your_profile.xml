@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:textColor="@android:color/black"
+    android:background="@android:color/white"
+    tools:context=".YourProfileActivity">
+
+    <!-- Your Profile Heading -->
+    <TextView
+        android:id="@+id/tvYourProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Your Details Button -->
+    <TextView
+        android:id="@+id/tvYourDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Your Details"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvYourProfile"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:drawableStart="@drawable/ic_baseline_lock_24" />
+
+    <!-- Divider Line -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintTop_toBottomOf="@id/tvYourDetails"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Your Translations Button -->
+    <TextView
+        android:id="@+id/tvYourTranslations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Your Translations"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:drawableStart="@drawable/ic_baseline_email_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
